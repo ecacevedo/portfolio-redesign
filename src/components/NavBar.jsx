@@ -27,6 +27,14 @@ export default function NavBar() {
           >
             Projects
           </NavLink>
+          <NavLink 
+            to="/contact" 
+            className={({ isActive }) => 
+              isActive ? 'font-semibold text-gray-900' : 'hover:text-gray-900 transition-colors'
+            }
+          >
+            Contact
+          </NavLink>
         </div>
       </div>
     </nav>

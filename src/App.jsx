@@ -10,6 +10,8 @@ import ProjectTrailhead from './pages/ProjectTrailhead';
 import ProjectFlightAttendant from './pages/ProjectFlightAttendant';
 import ProjectSRAMSite from './pages/ProjectSRAMSite';
 import ProjectAXSOverhaul from './pages/ProjectAXSOverhaul';
+import Contact from './pages/Contact';
+
 
 
 function AnimatedRoutes() {
@@ -25,6 +27,7 @@ function AnimatedRoutes() {
         <Route path="/projects/flight-attendant" element={<ProjectFlightAttendant />} />
         <Route path="/projects/sram-site" element={<ProjectSRAMSite />} />
         <Route path="/projects/axs-overhaul" element={<ProjectAXSOverhaul />} />
+        <Route path="/contact" element={<Contact />} />
       </Routes>
     </AnimatePresence>
   );
