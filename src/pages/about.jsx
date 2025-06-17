@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import profileImage from '../assets/IMG_4849.png';
+import profileImage from '../assets/image001.jpg';
 
 export default function About() {
   return (
