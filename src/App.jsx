@@ -4,8 +4,8 @@ import { AnimatePresence } from 'framer-motion';
 
 // Import all the page components
 import NavBar from "./components/NavBar";
-import About from "./pages/About";
-import Projects from './pages/Projects';
+import About from "./pages/about";
+import Projects from './pages/projects';
 import ProjectTrailhead from './pages/ProjectTrailhead';
 import ProjectFlightAttendant from './pages/ProjectFlightAttendant';
 import ProjectSRAMSite from './pages/ProjectSRAMSite';
