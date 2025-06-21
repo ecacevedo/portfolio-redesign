@@ -2,8 +2,8 @@ import React from "react"
 import { Routes, Route, useLocation } from "react-router-dom"
 import { AnimatePresence } from "framer-motion"
 
-import Navbar from "./components/Navbar"
-import DotNav from "./components/DotNav"
+import Navbar from "./components/NavBar"
+
 
 import About from "./pages/about"
 import Projects from "./pages/projects"
