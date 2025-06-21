@@ -9,7 +9,7 @@ import About from "./pages/about"
 import Projects from "./pages/projects"
 import ProjectTrailhead from "./pages/ProjectTrailhead"
 import ProjectFlightAttendant from "./pages/ProjectFlightAttendant"
-import ProjectSRAMSite from "./pages/ProjectSRAMSite"
+import BikeFinder from "./pages/BikeFinder"
 import ProjectAXSOverhaul from "./pages/ProjectAXSOverhaul"
 import Contact from "./pages/Contact"
 import Resume from "./pages/Resume"
@@ -25,7 +25,7 @@ function AnimatedRoutes() {
         <Route path="/projects" element={<Projects />} />
         <Route path="/projects/trailhead" element={<ProjectTrailhead />} />
         <Route path="/projects/flightattendant" element={<ProjectFlightAttendant />} />
-        <Route path="/projects/sramsite" element={<ProjectSRAMSite />} />
+        <Route path="/projects/bikefinder" element={<BikeFinder />} />
         <Route path="/projects/axs" element={<ProjectAXSOverhaul />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/resume" element={<Resume />} />
