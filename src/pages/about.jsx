@@ -1,40 +1,65 @@
-import React from 'react';
-import { motion } from 'framer-motion';
-import profileImage from '../assets/image001.jpg';
+import React from "react"
+import profileImage from "../assets/profile.jpeg"
+import { motion } from "framer-motion"
 
 export default function About() {
   return (
-    <motion.main
-      className="min-h-screen flex flex-col md:flex-row items-center justify-center px-6 md:px-12 py-20 gap-12 bg-white dark:bg-gray-900 text-gray-800 dark:text-gray-100"
-      initial={{ opacity: 0, y: 20 }}
-      animate={{ opacity: 1, y: 0 }}
-      exit={{ opacity: 0, y: 20 }}
-      transition={{ duration: 0.5 }}
-    >
-      {/* Profile Image */}
-      <div className="flex-shrink-0">
+    <main className="min-h-screen bg-[#000007] text-white px-6 py-20 flex flex-col items-start justify-center space-y-16 font-sans max-w-5xl mx-auto">
+      {/* Header with image */}
+      <div className="flex flex-col md:flex-row items-start md:items-center gap-8 w-full">
         <img
           src={profileImage}
-          alt="Estevan Acevedo"
-          className="w-48 h-48 md:w-60 md:h-60 rounded-full object-cover shadow-lg border dark:border-gray-700"
+          alt="Portrait of Estevan Acevedo"
+          className="w-28 h-28 md:w-36 md:h-36 rounded-full object-cover border border-zinc-700 shadow-md"
         />
+        <h1 className="text-6xl font-bold leading-tight tracking-tight">
+          Hi, I’m Estevan Acevedo
+        </h1>
       </div>
 
-      {/* Text Block */}
-      <div className="max-w-xl text-center md:text-left">
-        <h1 className="text-4xl font-black mb-4 tracking-tight">
-          Estevan Acevedo
-        </h1>
-
-        <p className="text-lg md:text-xl mb-6 leading-relaxed">
-          Product designer focused on clarity, systems, and long-term impact. I work across product, engineering, and brand to make digital experiences feel honest, useful, and quietly elegant.
+      {/* Subhead with motion */}
+      <motion.div
+        className="text-zinc-400 tracking-tight text-base md:text-6xl leading-relaxed space-y-3"
+        initial={{ opacity: 0, y: 16 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ delay: 0.1, duration: 0.6, ease: "easeOut" }}
+      >
+        <p>🤝 I design with you, not at you.</p>
+        <p>
+          🧠 Strategic. <span className="whitespace-nowrap">🎨 Visual.</span>{" "}
+          <span className="whitespace-nowrap">🧪 Curious.</span>
         </p>
+      </motion.div>
 
-        <div className="text-sm text-gray-500 dark:text-gray-400 space-y-1">
-          <p>Based in Colorado Springs</p>
-          <p>Designing at SRAM</p>
+      {/* Quick facts and links */}
+      <div className="text-zinc-500 space-y-2 text-base md:text-lg pt-6 leading-relaxed">
+        <p>📍 Based in Colorado Springs</p>
+        <p>🚲 Designing at SRAM</p>
+        <div className="pt-4 space-x-6">
+          <a
+            href="/v7-design-resume.pdf"
+            className="hover:text-white transition font-semibold"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            📄 Resume
+          </a>
+          <a
+            href="mailto:estevancacevedo@gmail.com"
+            className="hover:text-white transition font-semibold"
+          >
+            ✉️ Email
+          </a>
+          <a
+            href="https://linkedin.com/in/estevan-acevedo"
+            className="hover:text-white transition font-semibold"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            💼 LinkedIn
+          </a>
         </div>
       </div>
-    </motion.main>
-  );
+    </main>
+  )
 }
