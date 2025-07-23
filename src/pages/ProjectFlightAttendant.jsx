@@ -2,7 +2,7 @@ import React from "react"
 import DotNav from "../components/DotNav"
 
 import lscImage from "../assets/lsc.png"
-import overrideImage from "../assets/override.png"
+import overrideImage from "../assets/override.jpg"
 import pedalImage from "../assets/pedal.png"
 import automodeImage from "../assets/automode.png"
 
