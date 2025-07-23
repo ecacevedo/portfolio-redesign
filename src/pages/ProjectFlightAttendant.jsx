@@ -1,21 +1,22 @@
-import React from 'react'
+import React from "react"
 import DotNav from "../components/DotNav"
+
+import lscImage from "../assets/lsc.png"
+import overrideImage from "../assets/override.png"
+import pedalImage from "../assets/pedal.png"
+import automodeImage from "../assets/automode.png"
 
 export default function FlightAttendantCaseStudy() {
   return (
     <>
       <DotNav />
-      <main className="bg-[#000007] text-gray-100 max-w-3xl mx-auto px-6 py-20 text-base leading-relaxed">
-        <h1 className="text-4xl font-bold mb-6 text-white">
+      <main className="bg-[#000007] text-gray-100 max-w-3xl mx-auto px-6 py-24 text-base leading-relaxed prose prose-invert">
+        <h1 className="text-4xl font-bold mb-10 tracking-tight text-white">
           Flight Attendant: Making Suspension Feel Human
         </h1>
 
-        <blockquote className="italic text-lg border-l-4 border-gray-500 pl-4 text-gray-300 mb-12">
-          “I just want to know what my suspension is doing — and trust it’s doing the right thing.”
-        </blockquote>
-
-        <section className="mb-12">
-          <ul className="text-sm space-y-1 text-gray-400">
+        <section className="mb-8 text-sm space-y-2 text-gray-400">
+          <ul className="grid grid-cols-1 sm:grid-cols-2 gap-y-2">
             <li><strong className="text-white">Role:</strong> Lead Product Designer</li>
             <li><strong className="text-white">Team:</strong> 1 PM, 4 engineers, QA, RockShox hardware team, marketing, support</li>
             <li><strong className="text-white">Timeline:</strong> 5 months (design, validation, and testing for iOS and Android)</li>
@@ -29,67 +30,72 @@ export default function FlightAttendantCaseStudy() {
           </ul>
         </section>
 
-        <section className="mb-12">
-          <h2 className="text-2xl font-semibold text-white mb-2">The Problem</h2>
-          <p>Flight Attendant is RockShox’s automatic suspension system that adapts in real time to rider inputs and terrain. The hardware was cutting-edge. But the software experience lagged behind.</p>
-          <ul className="list-disc pl-6 mt-4 space-y-1">
-            <li>Unclear mode feedback led to second-guessing</li>
-            <li>Settings like Bias and Override felt intimidating and opaque</li>
-            <li>Battery and system status were too hidden or hard to find</li>
-          </ul>
-          <p className="mt-4">Riders weren’t asking for more features. They wanted clarity. That shaped our mission: make a technical system feel intuitive, responsive, and calm.</p>
-        </section>
+        <blockquote className="italic text-lg border-l-4 border-gray-500 pl-4 text-gray-300 mb-16 leading-loose">
+          “I just want to know what my suspension is doing and trust it’s doing the right thing.”
+        </blockquote>
 
-        <section className="mb-12">
-          <h2 className="text-2xl font-semibold text-white mb-2">Before vs After</h2>
-          <ul className="list-disc pl-6 space-y-1">
-            <li><strong>Before:</strong> A black box of automation, buried settings, rising support frustration</li>
-            <li><strong>After:</strong> Clear visual feedback, plain-language controls, real-time confidence</li>
-          </ul>
-          <p className="italic text-sm text-gray-400 mt-2">*Image: Rider viewing new FA status UI trailside*</p>
-        </section>
+        <section className="space-y-20">
+          <div>
+            <h2 className="text-2xl font-semibold text-white mb-6 tracking-normal">The Problem</h2>
+            <p>Flight Attendant is RockShox’s automatic suspension system. The hardware was far ahead, reactive, fast, deeply integrated. But the software didn’t keep pace. What should have felt alive often felt confusing.</p>
+            <ul className="list-disc pl-6 mt-4 space-y-1">
+              <li>Auto Mode gave no clear signal of what was happening</li>
+              <li>Settings like LSC and Override felt buried and technical</li>
+              <li>Adding a new Pedal sensor was a major pain point</li>
+            </ul>
+            <p className="mt-4">The ask wasn’t for more features. Riders wanted to understand the system they relied on. Our mission became clear. Make automation feel intuitive, readable, and human.</p>
+          </div>
 
-        <section className="mb-12">
-          <h2 className="text-2xl font-semibold text-white mb-2">Design Moves That Mattered</h2>
-          <ul className="list-disc pl-6 space-y-2">
-            <li><strong>Visual Mode Indicators:</strong> Iconography, subtle motion, and color cues reinforced what the system was doing — no guesswork.</li>
-            <li><strong>Plain-Language Bias Slider:</strong> We reframed the numerical input into a tactile slider labeled “Comfort to Efficiency” to shift focus from numbers to feel.</li>
-            <li><strong>Override Preview:</strong> Created a real-time flow that let riders preview the effect of a manual override before committing.</li>
-          </ul>
-          <p className="mt-4">We leaned into progressive disclosure: power users could access advanced telemetry, but newer riders weren’t overwhelmed.</p>
-          <p className="italic text-sm text-gray-400 mt-2">*Image: New Bias slider labeled 'Comfort — Balanced — Efficiency' with live feedback*</p>
-        </section>
+          <div>
+            <h2 className="text-2xl font-semibold text-white mb-6 tracking-normal">Before vs After</h2>
+            <p>Before, Auto Mode felt like riding with a ghost. Riders didn’t know which mode was active, when it shifted, or why. It worked, but you couldn’t feel that it worked. Some ignored it. Others turned it off entirely.</p>
+            <p className="mt-4">After, we gave the system a voice. The interface displayed current mode, system activity, and what was coming next. Riders could select which modes to include and see behavior unfold in real time. Auto Mode didn’t disappear, it became legible.</p>
+            <div className="flex justify-center my-10">
+              <img src={automodeImage} alt="Flight Attendant Auto Mode UI" className="rounded-xl w-2/5 max-w-sm" />
+            </div>
+          </div>
 
-        <section className="mb-12">
-          <h2 className="text-2xl font-semibold text-white mb-2">Cross-Team Decisions</h2>
-          <p>I partnered with engineering to prototype UI states and animations that respected our real-time system constraints. In parallel, I collaborated with support and QA to rewrite in-app help content and simplify key flows.</p>
-          <p className="mt-4">One high-leverage fix: we surfaced battery status and system connection on the default screen. That single change cut down “is it working?” tickets almost overnight.</p>
-        </section>
+          <div>
+            <h2 className="text-2xl font-semibold text-white mb-6 tracking-normal">Design Moves That Mattered</h2>
+            <p>We built toward clarity. Each pattern, label, and behavior had to make the ride feel understandable.</p>
+            <ul className="list-disc pl-6 space-y-2">
+              <li><strong>Visual Mode Indicators:</strong> We layered in iconography, subtle motion, and color cues. The system’s thinking became visible, not just functional.</li>
+              <li><strong>Low-Speed Compression (LSC) Reframed:</strong> We moved it out of the depths of the settings and made it tangible. A simple stepper let riders make fine-tuned changes, with plain labels and real-time feedback that showed what each step did.</li>
+              <li><strong>Override Preview:</strong> Previously, activating Override was a leap of faith. We added a preview flow so riders could see what would change before committing.</li>
+            </ul>
+            <div className="flex flex-col md:flex-row md:items-start md:gap-6 my-10">
+              <img src={lscImage} alt="LSC Bias slider UI" className="rounded-xl w-full md:w-1/2 h-auto max-h-[320px] object-contain" />
+              <img src={overrideImage} alt="Override preview UI" className="rounded-xl w-full md:w-1/2 h-auto max-h-[320px] object-contain" />
+            </div>
+            <p>We didn’t strip away complexity. We surfaced it with care. Advanced telemetry lived deeper in the flow, where it belonged. For most riders, the defaults just worked. For others, the door was open.</p>
+          </div>
 
-        <section className="mb-12">
-          <h2 className="text-2xl font-semibold text-white mb-2">What Changed</h2>
-          <ul className="list-disc pl-6 space-y-1">
-            <li>Support tickets dropped 30%, especially around setup confusion</li>
-            <li>System interaction rose by 20% among active riders</li>
-            <li>Positive feedback from riders, shop techs, and internal teams</li>
-          </ul>
-          <blockquote className="italic border-l-4 border-gray-500 pl-4 text-gray-300 mt-4">
-            “Honestly, I used to leave everything on default. Now I feel like I know what’s happening — and I can dial it in without stress.”
-          </blockquote>
-        </section>
+          <div>
+            <h2 className="text-2xl font-semibold text-white mb-6 tracking-normal">Cross-Team Decisions</h2>
+            <p>Real-time systems don’t wait. I partnered closely with engineers to design animations and transitions that matched hardware constraints without dropping frames. We prototyped timing, movement, and fallback states.</p>
+            <p className="mt-4">At the same time, I worked with support and QA to rethink the onboarding and diagnostic experience. The big win: surfacing battery, firmware, and connection states on the home screen. That cut setup-related tickets by nearly a third.</p>
+            <div className="flex justify-center my-10">
+              <img src={pedalImage} alt="Pedal sensor UI" className="rounded-xl w-full max-w-md" />
+            </div>
+            <p>We also introduced pedal sensor status for the first time. It’s essential for capturing cadence-based input and improving automatic mode response. Making it visible gave riders deeper confidence in what the system was responding to.</p>
+          </div>
 
-        <section className="mb-12">
-          <h2 className="text-2xl font-semibold text-white mb-2">Looking Ahead</h2>
-          <p>Flight Attendant now feels less like a black box and more like a partner. With another sprint or two, I’d explore low-energy battery alerts, ambient system status on wearables, and voice-assisted setup for first-time users.</p>
-          <p className="italic text-sm text-gray-400 mt-2">*Future idea: WatchOS widget with real-time suspension status*</p>
-        </section>
+          <div>
+            <h2 className="text-2xl font-semibold text-white mb-6 tracking-normal">What Changed</h2>
+            <ul className="list-disc pl-6 space-y-1">
+              <li>Support tickets dropped 30%, especially around setup confusion</li>
+              <li>System interaction rose by 20% among active riders</li>
+              <li>Positive feedback from riders, shop techs, and internal teams</li>
+            </ul>
+            <blockquote className="italic border-l-4 border-gray-500 pl-4 text-gray-300 mt-4">
+              “Honestly, I used to leave everything on default. Now I feel like I know what’s happening and I can dial it in without stress.”
+            </blockquote>
+          </div>
 
-        <section>
-          <h2 className="text-2xl font-semibold text-white mb-2">What I Took With Me</h2>
-          <p>Designing for trust isn’t about hiding complexity — it’s about making complexity feel understandable. Clarity builds confidence. When riders feel seen and supported, they engage more. They explore. And they ride better.</p>
-          <blockquote className="italic border-l-4 border-gray-500 pl-4 text-gray-300 mt-4">
-            “Tech should feel like a partner, not a puzzle.”
-          </blockquote>
+          <div>
+            <h2 className="text-2xl font-semibold text-white mb-6 tracking-normal">What I Took With Me</h2>
+            <p>Trust isn’t built through features. It’s built through clarity. You don’t need to explain every behavior. But if the system feels quiet, reliable, and clear, riders will feel it. They’ll ride more. They’ll push harder. They’ll stop wondering if it’s working, and just ride.</p>
+          </div>
         </section>
       </main>
     </>

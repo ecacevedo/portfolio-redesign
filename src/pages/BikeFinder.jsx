@@ -18,21 +18,19 @@ export default function CaseStudyBikeFinder() {
           <p><strong>Results:</strong> 50x traffic increase, deep link adoption across marketing, reduced dev maintenance</p>
         </div>
 
-        <p className="italic text-gray-400 mb-8">*Image: UI showing filters and SRAM bike cards in use*</p>
+            <div className="my-8">
+  <img src={fullbikefinder} alt="Full Bike Finder UI with filters" className="rounded-xl w-full" />
+</div>
 
         <section className="mb-12">
           <p className="text-lg font-semibold mb-1 text-white">What We Built and Why It Mattered</p>
-          <div className="my-8">
-  <img src={fullbikefinder} alt="Full Bike Finder UI with filters" className="rounded-xl w-full" />
-</div>
+       
 
        
           <p className="text-gray-300">
             "I just want to see gravel bikes with Force AXS — why is that so hard?" That question kept showing up, and we didn’t have a good answer. The old Bike Finder couldn’t keep up. So we rebuilt it from the ground up.
           </p>
-          <div className="my-8">
-  <img src={urlImage} alt="Deep link filter state in URL" className="rounded-xl w-full" />
-</div>
+
 
           <p className="mt-4 text-gray-300">
             We turned SRAM's Bike Finder from a brittle no code tool into a modular, coded platform. Riders got intuitive filters. Marketers got deep linking. Content teams got autonomy. Traffic scaled 50x during launches. The system is now flexible enough to grow with the brand.
@@ -92,7 +90,10 @@ export default function CaseStudyBikeFinder() {
             <li><strong>Accessibility:</strong> Designed for keyboard nav and screen readers from the start</li>
           </ul>
 
-          <p className="mt-4 italic text-gray-400">*Image: Deep link URL structure shown with selected filters*</p>
+                    <div className="my-8">
+  <img src={urlImage} alt="Full Bike Finder UI with filters" className="rounded-xl w-full" />
+</div>
+
           <div className="bg-gray-800 border-l-4 border-gray-500 px-4 py-2 my-6 italic text-gray-400">
             Design principle: Show power without intimidation
           </div>
