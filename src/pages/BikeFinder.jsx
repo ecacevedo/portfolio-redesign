@@ -1,6 +1,10 @@
 import React from 'react'
 import DotNav from "../components/DotNav"
 
+import fullbikefinder from "../assets/fullbikefinder.png"
+import urlImage from "../assets/url.png"
+import screenRecording from "../assets/recording.mov"
+
 export default function CaseStudyBikeFinder() {
   return (
     <>
@@ -18,9 +22,18 @@ export default function CaseStudyBikeFinder() {
 
         <section className="mb-12">
           <p className="text-lg font-semibold mb-1 text-white">What We Built and Why It Mattered</p>
+          <div className="my-8">
+  <img src={fullbikefinder} alt="Full Bike Finder UI with filters" className="rounded-xl w-full" />
+</div>
+
+       
           <p className="text-gray-300">
             "I just want to see gravel bikes with Force AXS — why is that so hard?" That question kept showing up, and we didn’t have a good answer. The old Bike Finder couldn’t keep up. So we rebuilt it from the ground up.
           </p>
+          <div className="my-8">
+  <img src={urlImage} alt="Deep link filter state in URL" className="rounded-xl w-full" />
+</div>
+
           <p className="mt-4 text-gray-300">
             We turned SRAM's Bike Finder from a brittle no code tool into a modular, coded platform. Riders got intuitive filters. Marketers got deep linking. Content teams got autonomy. Traffic scaled 50x during launches. The system is now flexible enough to grow with the brand.
           </p>
@@ -108,6 +121,13 @@ export default function CaseStudyBikeFinder() {
 
         <section className="mb-12">
           <h2 className="text-2xl font-semibold text-white mb-2">The Wins That Proved It Worked</h2>
+          <div className="my-8">
+  <video controls className="rounded-xl w-full">
+    <source src={screenRecording} type="video/mp4" />
+    Your browser does not support the video tag.
+  </video>
+</div>
+
           <ul className="list-disc list-inside space-y-1 text-gray-300">
             <li>Traffic jumped from 200 to 10,000+ daily visits during launches</li>
             <li>Deep links embedded across product pages and email campaigns</li>
