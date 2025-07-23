@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react"
 import { Link } from "react-router-dom"
 
 import fullBikeFinderImage from "../assets/fullbikefinder.png"
-import desktopPDP from "../assets/Desktop PDP MVP.png"
+import desktopPDPImage from "../assets/Desktop PDP MVP.png"
 import autoModeImage from "../assets/automode.png"
 
 export default function Projects() {
@@ -53,37 +53,37 @@ export default function Projects() {
 
       <div className="grid md:grid-cols-2 gap-16">
         {/* Project 1: Bike Finder */}
-        <Link to="/bikefinder" className="group">
+        <Link to="/projects/bikefinder" className="group">
           <div className="overflow-hidden rounded-xl mb-4">
             <img
               src={fullBikeFinderImage}
-              alt="Bike Finder Redesign Preview"
+              alt="Bike Finder Preview"
               className="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105"
             />
           </div>
-          <h2 className="text-xl font-semibold text-white mb-2">Bike Finder 2.0</h2>
+          <h2 className="text-xl font-semibold text-white mb-2">Bike Finder</h2>
           <p className="text-gray-400 text-sm leading-relaxed">
-            Rebuilt the product-finding experience from the ground up. Boosted conversion, reduced support churn, and clarified buying decisions across complex drivetrain ecosystems.
+            Redesigned product matching to boost clarity and confidence.
           </p>
         </Link>
 
         {/* Project 2: Trailhead */}
-        <Link to="/trailhead" className="group">
+        <Link to="/projects/trailhead" className="group">
           <div className="overflow-hidden rounded-xl mb-4">
             <img
-              src={desktopPDP}
-              alt="Trailhead Redesign Preview"
+              src={desktopPDPImage}
+              alt="Trailhead Preview"
               className="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105"
             />
           </div>
-          <h2 className="text-xl font-semibold text-white mb-2">Trailhead Redesign</h2>
+          <h2 className="text-xl font-semibold text-white mb-2">Trailhead</h2>
           <p className="text-gray-400 text-sm leading-relaxed">
-            Unified RockShox and SRAM AXS fitment into a single, modern product page. Improved comprehension, mobile usability, and team handoff velocity.
+            Unified fitment and improved mobile setup experience.
           </p>
         </Link>
 
         {/* Project 3: Flight Attendant */}
-        <Link to="/flightattendant" className="group">
+        <Link to="/projects/flightattendant" className="group">
           <div className="overflow-hidden rounded-xl mb-4">
             <img
               src={autoModeImage}
@@ -91,20 +91,20 @@ export default function Projects() {
               className="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105"
             />
           </div>
-          <h2 className="text-xl font-semibold text-white mb-2">Flight Attendant UI</h2>
+          <h2 className="text-xl font-semibold text-white mb-2">Flight Attendant</h2>
           <p className="text-gray-400 text-sm leading-relaxed">
-            Helped riders trust the tech behind RockShox’s automatic suspension. Designed real-time feedback, override previews, and simplified setup across iOS and Android.
+            Made smart suspension readable and human.
           </p>
         </Link>
 
-        {/* Project 4: AXS Overhaul (Coming Soon) */}
+        {/* Project 4: AXS Overhaul Placeholder */}
         <Link to="/projects/axs" className="group block bg-zinc-900 rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition">
           <div className="h-52 bg-gradient-to-br from-zinc-800 to-zinc-700 flex items-center justify-center text-gray-500 text-sm italic">
             *Image: Placeholder for AXS Overhaul*
           </div>
           <div className="p-6">
             <h2 className="text-xl font-semibold text-white group-hover:underline">[Coming Soon] AXS Overhaul</h2>
-            <p className="text-sm text-gray-400 mt-1">E‑MTB control, clarified</p>
+            <p className="text-sm text-gray-400 mt-1">E‑MTB control, clarified.</p>
           </div>
         </Link>
       </div>
