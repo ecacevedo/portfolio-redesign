@@ -1,5 +1,5 @@
 import React from 'react'
-import DotNav from "../components/DotNav"
+
 
 import fullbikefinder from "../assets/fullbikefinder.png"
 import urlImage from "../assets/url.png"
@@ -8,7 +8,7 @@ import screenRecording from "../assets/recording.mov"
 export default function CaseStudyBikeFinder() {
   return (
     <>
-      <DotNav />
+    
       <main className="bg-[#000007] text-gray-100 max-w-3xl mx-auto px-6 py-20 text-base leading-relaxed">
         <h1 className="text-4xl font-bold mb-6 text-white">Bike Finder 2.0: From Limitation to Launchpad</h1>
 
@@ -28,7 +28,7 @@ export default function CaseStudyBikeFinder() {
 
        
           <p className="text-gray-300">
-            "I just want to see gravel bikes with Force AXS — why is that so hard?" That question kept showing up, and we didn’t have a good answer. The old Bike Finder couldn’t keep up. So we rebuilt it from the ground up.
+            "I just want to see gravel bikes with Force AXS  why is that so hard?" That question kept showing up, and we didn’t have a good answer. The old Bike Finder couldn’t keep up. So we rebuilt it from the ground up.
           </p>
 
 
@@ -56,7 +56,7 @@ export default function CaseStudyBikeFinder() {
             </ul>
           </div>
 
-          <p className="mt-4 italic text-gray-400">“This tool helped me find a bike with Rival AXS in minutes. Super intuitive.” — Rider feedback, Eagle Transmission launch</p>
+          <p className="mt-4 italic text-gray-400">“This tool helped me find a bike with Rival AXS in minutes. Super intuitive.”  Rider feedback, Eagle Transmission launch</p>
         </section>
 
         <section className="mb-12">
@@ -94,9 +94,7 @@ export default function CaseStudyBikeFinder() {
   <img src={urlImage} alt="Full Bike Finder UI with filters" className="rounded-xl w-full" />
 </div>
 
-          <div className="bg-gray-800 border-l-4 border-gray-500 px-4 py-2 my-6 italic text-gray-400">
-            Design principle: Show power without intimidation
-          </div>
+          
         </section>
 
         <section className="mb-12">
@@ -107,7 +105,7 @@ export default function CaseStudyBikeFinder() {
           <p className="mt-4 text-gray-300">
             We tested filter logic, labels, and sorting behavior internally every sprint. And we kept refining based on real-time product launch data.
           </p>
-          <p className="mt-4 italic text-gray-400">“Now I can link straight to Rival AXS gravel builds. Game changer.” — SRAM Content Team</p>
+          <p className="mt-4 italic text-gray-400">“Now I can link straight to Rival AXS gravel builds. Game changer.”  SRAM Content Team</p>
         </section>
 
         <section className="mb-12">
@@ -116,7 +114,7 @@ export default function CaseStudyBikeFinder() {
             My job was often that of translator. Prototypes lived in Figma, but the logic traveled by Loom and Slack. Engineers needed interaction patterns that were state-aware. Brand teams needed copy that was voice aligned and testable.
           </p>
           <p className="mt-4 text-gray-300">
-            I worked closely with devs on URL serialization and filter behavior — everything from edge cases to how the back button should feel. We paired often and worked fast.
+            I worked closely with devs on URL serialization and filter behavior. Everything from edge cases to how the back button should feel. We paired often and worked fast.
           </p>
         </section>
 
@@ -137,20 +135,12 @@ export default function CaseStudyBikeFinder() {
           </ul>
         </section>
 
-        <section className="mb-12">
-          <h2 className="text-2xl font-semibold text-white mb-2">What I’d Add If I Had One More Week</h2>
-          <p className="text-gray-300">
-            The system is designed to scale. We’re looking at comparisons, variant previews, and localization. If I could rewind, I’d add version control and rollback for content editors — a lightweight safety net with big payoff.
-          </p>
-          <div className="bg-gray-800 border-l-4 border-gray-500 px-4 py-2 my-6 italic text-gray-400">
-            Future opportunity: lightweight versioning for content editors
-          </div>
-        </section>
+     
 
         <section>
           <h2 className="text-2xl font-semibold text-white mb-2">What This Taught Me About Designing for Everyone</h2>
           <p className="text-gray-300">
-            This wasn’t just about filters. It was about designing a shared space — one that helped riders find what they needed while letting marketers tell sharper stories. A tool that quietly does the heavy lifting for everyone.
+            This wasn’t just about filters. It was about designing a shared space  that helped riders find what they needed while letting marketers tell sharper stories. A tool that quietly does the heavy lifting for everyone.
           </p>
           <p className="mt-4 text-gray-300">
             I’m proud of the simplicity, but more proud of the adaptability. This system didn’t just meet today’s needs. It gave SRAM a framework to grow with.

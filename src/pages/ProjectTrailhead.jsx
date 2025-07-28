@@ -1,5 +1,5 @@
 import React from "react"
-import DotNav from "../components/DotNav"
+
 
 import serialDrawing from "../assets/deskop-serial-with-drawings.png"
 import modelCode from "../assets/Desktop Model Code.png"

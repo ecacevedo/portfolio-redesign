@@ -52,20 +52,7 @@ export default function Projects() {
       </h1>
 
       <div className="grid md:grid-cols-2 gap-16">
-        {/* Project 1: Bike Finder */}
-        <Link to="/projects/bikefinder" className="group">
-          <div className="overflow-hidden rounded-xl mb-4">
-            <img
-              src={fullBikeFinderImage}
-              alt="Bike Finder Preview"
-              className="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105"
-            />
-          </div>
-          <h2 className="text-xl font-semibold text-white mb-2">Bike Finder</h2>
-          <p className="text-gray-400 text-sm leading-relaxed">
-            Redesigned product matching to boost clarity and confidence.
-          </p>
-        </Link>
+      
 
         {/* Project 2: Trailhead */}
         <Link to="/projects/trailhead" className="group">
@@ -94,6 +81,21 @@ export default function Projects() {
           <h2 className="text-xl font-semibold text-white mb-2">Flight Attendant</h2>
           <p className="text-gray-400 text-sm leading-relaxed">
             Made smart suspension readable and human.
+          </p>
+        </Link>
+
+          {/* Project 1: Bike Finder */}
+        <Link to="/projects/bikefinder" className="group">
+          <div className="overflow-hidden rounded-xl mb-4">
+            <img
+              src={fullBikeFinderImage}
+              alt="Bike Finder Preview"
+              className="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105"
+            />
+          </div>
+          <h2 className="text-xl font-semibold text-white mb-2">Bike Finder</h2>
+          <p className="text-gray-400 text-sm leading-relaxed">
+            Redesigned product matching to boost clarity and confidence.
           </p>
         </Link>
 

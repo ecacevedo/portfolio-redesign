@@ -1,5 +1,5 @@
 import React from "react"
-import DotNav from "../components/DotNav"
+
 
 import lscImage from "../assets/lsc.png"
 import overrideImage from "../assets/override.jpg"
