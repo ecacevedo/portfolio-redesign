@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react"
 import { motion, useScroll, useTransform } from "framer-motion"
-import profileImage from "../assets/profile.jpg"
+import profileImage from "../assets/profile.jpeg"
 
 export default function About() {
   const { scrollY } = useScroll()
