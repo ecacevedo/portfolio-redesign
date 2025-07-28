@@ -65,7 +65,7 @@ export default function Projects() {
           </div>
           <h2 className="text-xl font-semibold text-white mb-2">Trailhead</h2>
           <p className="text-gray-400 text-sm leading-relaxed">
-            Unified fitment and improved mobile setup experience.
+           Made suspension tuning make sense again.
           </p>
         </Link>
 

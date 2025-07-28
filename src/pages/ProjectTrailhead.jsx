@@ -11,14 +11,13 @@ import lyrikProduct from "../assets/image001.png"
 export default function ProjectTrailhead() {
   return (
     <>
-      <DotNav />
       <main className="bg-[#000007] text-gray-100 max-w-3xl mx-auto px-6 py-24 text-base leading-relaxed prose prose-invert">
         <h1 className="text-4xl font-bold mb-10 tracking-tight text-white">
-          Trailhead 2.0: Rebuilding Trust in Suspension Tuning
+          Trailhead: Rebuilding Trust in Suspension Tuning
         </h1>
 
         <section className="mb-8 text-sm space-y-2 text-gray-400">
-          <ul className="grid grid-cols-1 sm:grid-cols-2 gap-y-2">
+          <ul className="grid grid-cols-1 sm:grid-cols-2 gap-y-2 bg-gray-900 text-white p-4 rounded-xl shadow-md mb-8">
             <li><strong className="text-white">Role:</strong> Lead Product Designer</li>
             <li><strong className="text-white">Team:</strong> 1 PM, 2 engineers, RockShox marketing</li>
             <li><strong className="text-white">Timeline:</strong> 6 months, iOS and Android</li>

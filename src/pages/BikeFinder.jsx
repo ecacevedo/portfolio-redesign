@@ -10,7 +10,7 @@ export default function CaseStudyBikeFinder() {
     <>
     
       <main className="bg-[#000007] text-gray-100 max-w-3xl mx-auto px-6 py-20 text-base leading-relaxed">
-        <h1 className="text-4xl font-bold mb-6 text-white">Bike Finder 2.0: From Limitation to Launchpad</h1>
+        <h1 className="text-4xl font-bold mb-6 text-white">Bike Finder: From Limitation to Launchpad</h1>
 
         <div className="bg-gray-900 text-white p-4 rounded-xl shadow-md mb-8">
           <p><strong>Role:</strong> Lead Product Designer</p>
