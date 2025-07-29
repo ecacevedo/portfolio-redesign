@@ -6,44 +6,8 @@ import desktopPDPImage from "../assets/Desktop PDP MVP.png"
 import autoModeImage from "../assets/automode.png"
 
 export default function Projects() {
-  const PASSWORD = "designonly"
-  const [isAuthorized, setIsAuthorized] = useState(false)
-  const [input, setInput] = useState("")
+  
 
-  useEffect(() => {
-    const stored = sessionStorage.getItem("authorized")
-    if (stored === "true") setIsAuthorized(true)
-  }, [])
-
-  const handleAuth = () => {
-    if (input === PASSWORD) {
-      sessionStorage.setItem("authorized", "true")
-      setIsAuthorized(true)
-    } else {
-      alert("Incorrect password")
-    }
-  }
-
-  if (!isAuthorized) {
-    return (
-      <main className="min-h-screen bg-[#000007] text-white px-6 py-32 flex flex-col items-center justify-center text-center space-y-6">
-        <h1 className="text-2xl font-semibold">🔒 Protected Area</h1>
-        <input
-          type="password"
-          placeholder="Enter password"
-          value={input}
-          onChange={(e) => setInput(e.target.value)}
-          className="px-4 py-2 rounded bg-zinc-800 text-white border border-zinc-600 focus:outline-none"
-        />
-        <button
-          onClick={handleAuth}
-          className="mt-2 px-4 py-2 bg-zinc-700 rounded hover:bg-zinc-600 transition"
-        >
-          Submit
-        </button>
-      </main>
-    )
-  }
 
   return (
     <main className="bg-[#000007] text-gray-100 max-w-5xl mx-auto px-6 py-24">
