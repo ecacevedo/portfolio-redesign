@@ -1,2 +1,5 @@
-/projects*
+/projects
+  Basic-Auth: estevan:design12!
+
+/projects/*
   Basic-Auth: estevan:design12!
